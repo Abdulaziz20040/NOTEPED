@@ -1,0 +1,121 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+  background-color: rgb(0, 57, 63);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px; /* Add rounded corners */
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 15px;
+}
+
+.dot-icon {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: 60px; /* Rasm pastida chiqishi uchun */
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 150px; /* Kattalikni moslash */
+  padding: 10px;
+  z-index: 10;
+}
+
+.dropdown-menu p {
+  margin: 0;
+  font-size: 14px;
+  color: black;
+}
+
+.logout-btn {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  background-color: aqua;
+  transform: translateY(-5px); /* Lift the item on hover */
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.5); /* White shadow effect */
+}
+
+.nav-links .active {
+  background-color: aqua;
+  transform: translateY(-5px); /* Keep it lifted when active */
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.5); /* White shadow effect */
+  border-radius: 5px; /* Ensure the border-radius is applied */
+}
+
+.buttonhj {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border: none; /* Remove default border if any */
+  background: none; /* Ensure no background */
+  cursor: pointer;
+}
+
+.buttonhj img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 5px;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.5); /* White shadow effect for the image */
+}
+
+.shadow {
+  -webkit-box-shadow: -1px -4px 54px 1px rgba(187, 225, 255, 0.72) inset;
+  -moz-box-shadow: -1px -4px 54px 1px rgba(187, 225, 255, 0.72) inset;
+  box-shadow: -1px -4px 54px 1px rgba(187, 225, 255, 0.72) inset;
+}
+
+.user-card {
+  border: 1px solid #eaeaea; /* Chegarani belgilash */
+  border-radius: 8px; /* Burchaklarni yumshatish */
+  padding: 16px; /* Ichki bo'shliqlar */
+  margin: 10px 0; /* Tashqi bo'shliqlar */
+  background-color: #f9f9f9; /* Orqa fon rangini belgilash */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* So'ya berish */
+}
+
+.user-card h3 {
+  margin: 0; /* H3 elementlarining default bo'shliqlarini olib tashlash */
+  font-size: 16px; /* Matn o'lchami */
+}
